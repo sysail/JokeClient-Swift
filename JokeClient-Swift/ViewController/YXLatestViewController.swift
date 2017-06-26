@@ -16,10 +16,10 @@ class YXLatestViewController: UIViewController,UITableViewDataSource,UITableView
     
     
     lazy var tableView = { () -> UITableView in
-        let tv : UITableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height), style: UITableViewStyle.plain)
+        let tv : UITableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height - (self.tabBarController?.tabBar.frame.size.height)!), style: UITableViewStyle.plain)
+        tv.separatorStyle = UITableViewCellSeparatorStyle.none
         tv.dataSource = self
         tv.delegate = self
-        tv.estimatedRowHeight = 250
         return tv
     }()
     
@@ -60,4 +60,10 @@ class YXLatestViewController: UIViewController,UITableViewDataSource,UITableView
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let dict = dataArray[indexPath.row] as! NSDictionary
+        return YXJokeCell.cellHeightByData(dict)
+    }
+    
 }
+

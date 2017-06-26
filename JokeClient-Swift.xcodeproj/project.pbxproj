@@ -19,6 +19,11 @@
 		3C471BE81EFBBAB00004FC1A /* YXJokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C471BE61EFBBAB00004FC1A /* YXJokeCell.swift */; };
 		3C471BE91EFBBAB00004FC1A /* YXJokeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C471BE71EFBBAB00004FC1A /* YXJokeCell.xib */; };
 		3C471BEB1EFBC2760004FC1A /* YXHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C471BEA1EFBC2760004FC1A /* YXHttpTool.swift */; };
+		3CB669371F00BA7A007CFBFE /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB669361F00BA7A007CFBFE /* UIView+Frame.swift */; };
+		3CB669391F00BB3D007CFBFE /* String+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB669381F00BB3D007CFBFE /* String+Extend.swift */; };
+		3CB6693B1F00E10C007CFBFE /* FileUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6693A1F00E10C007CFBFE /* FileUtility.swift */; };
+		3CB6693D1F00E134007CFBFE /* UIImageView+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6693C1F00E134007CFBFE /* UIImageView+Extend.swift */; };
+		3CB6693F1F00F878007CFBFE /* NSDictionary+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6693E1F00F878007CFBFE /* NSDictionary+Extend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		3C471BE61EFBBAB00004FC1A /* YXJokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXJokeCell.swift; sourceTree = "<group>"; };
 		3C471BE71EFBBAB00004FC1A /* YXJokeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXJokeCell.xib; sourceTree = "<group>"; };
 		3C471BEA1EFBC2760004FC1A /* YXHttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXHttpTool.swift; sourceTree = "<group>"; };
+		3CB669361F00BA7A007CFBFE /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		3CB669381F00BB3D007CFBFE /* String+Extend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extend.swift"; sourceTree = "<group>"; };
+		3CB6693A1F00E10C007CFBFE /* FileUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtility.swift; sourceTree = "<group>"; };
+		3CB6693C1F00E134007CFBFE /* UIImageView+Extend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extend.swift"; sourceTree = "<group>"; };
+		3CB6693E1F00F878007CFBFE /* NSDictionary+Extend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Extend.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				3C471BEA1EFBC2760004FC1A /* YXHttpTool.swift */,
+				3CB6693A1F00E10C007CFBFE /* FileUtility.swift */,
+				3CB669361F00BA7A007CFBFE /* UIView+Frame.swift */,
+				3CB669381F00BB3D007CFBFE /* String+Extend.swift */,
+				3CB6693C1F00E134007CFBFE /* UIImageView+Extend.swift */,
+				3CB6693E1F00F878007CFBFE /* NSDictionary+Extend.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -191,9 +206,14 @@
 			files = (
 				3C471BDB1EFBA7AC0004FC1A /* YXMainViewController.swift in Sources */,
 				3C471BB51EFBA41E0004FC1A /* AppDelegate.swift in Sources */,
+				3CB6693D1F00E134007CFBFE /* UIImageView+Extend.swift in Sources */,
+				3CB6693B1F00E10C007CFBFE /* FileUtility.swift in Sources */,
 				3C471BEB1EFBC2760004FC1A /* YXHttpTool.swift in Sources */,
 				3C471BDE1EFBB1330004FC1A /* YXLatestViewController.swift in Sources */,
+				3CB669391F00BB3D007CFBFE /* String+Extend.swift in Sources */,
 				3C471BE11EFBB14C0004FC1A /* YXHotViewController.swift in Sources */,
+				3CB6693F1F00F878007CFBFE /* NSDictionary+Extend.swift in Sources */,
+				3CB669371F00BA7A007CFBFE /* UIView+Frame.swift in Sources */,
 				3C471BE81EFBBAB00004FC1A /* YXJokeCell.swift in Sources */,
 				3C471BE31EFBB1710004FC1A /* YXTruthViewController.swift in Sources */,
 				3C471BE51EFBB1820004FC1A /* YXAboutViewController.swift in Sources */,
@@ -315,6 +335,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AXJ4X635K3;
 				INFOPLIST_FILE = "JokeClient-Swift/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pupulove.demo.JokeClient-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -328,6 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AXJ4X635K3;
 				INFOPLIST_FILE = "JokeClient-Swift/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pupulove.demo.JokeClient-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +376,7 @@
 				3C471BC51EFBA41E0004FC1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,7 +10,7 @@ import UIKit
 
 class YXMainViewController: UITabBarController {
     
-    let tabbarBGColor : UIColor = UIColor.init(red: 251/255.0, green: 173/255.0, blue: 60/255.0, alpha: 1)
+    let tabbarBGColor : UIColor = UIColor.white
     
     let itemArray = ["最新","热门","真相","关于"]
     
@@ -21,6 +21,7 @@ class YXMainViewController: UITabBarController {
         
         self.title = itemArray[0]
         
+        initTabbar()
         initViewControllers()
     }
 
@@ -28,6 +29,7 @@ class YXMainViewController: UITabBarController {
     func initViewControllers() -> Void {
         let latestVC = YXLatestViewController()
         latestVC.tabBarItem.title = itemArray[0]
+        latestVC.tabBarItem.image = UIImage.init(named: "tabbar_01")
         
         let hotVC = YXHotViewController()
         hotVC.tabBarItem.title = itemArray[1]
@@ -40,6 +42,12 @@ class YXMainViewController: UITabBarController {
         
         self.viewControllers = [latestVC,hotVC,truethVC,aboutVC]
         
+    }
+    
+    func initTabbar(){
+        self.tabBar.backgroundColor = tabbarBGColor
+        self.tabBar.tintColor = UIColor.orange
+
     }
     
     //MARK: Delegate
